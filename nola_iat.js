@@ -10,10 +10,8 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 		      height : 7 //Used to position the "Or" in the combined block.
 		    }, 
 		    media : [ //Stimuli content as PIP's media objects
-    		    	{word: 'dependent'},
-				{word: 'mental handicap'},
+    		    		{word: 'mental handicap'},
 				{word: 'slow learner'},
-				{word: 'impaired'},
 				{word: 'special needs'}
 		
 		    ],
@@ -30,9 +28,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
-				{word: 'sickness'},
 				{word: 'hatred'},
-				{word: 'disease'},
 				{word: 'terrible'},
 				{word: 'poison'}
 				
@@ -49,8 +45,6 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
-				{word: 'happiness'},
-				{word: 'laughter'},
 				{word: 'joyful'},
 				{word: 'rainbow'},
 				{word: 'sunshine'}
