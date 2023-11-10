@@ -2,7 +2,6 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 
 	var API = new APIConstructor();
 		  return stiatExtension({
-			  isTouch: true,
 		  category : { 
 		    name : 'ID', //Will appear in the data.
 		    title : {
