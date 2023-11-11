@@ -171,7 +171,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Items will appear one at a time.<br/><br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
-				'<p align="center">Press the <b>Space Bar</b> when you are ready to start.</font></p></div>', 
+				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
 			instTemplateCategoryRight : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
@@ -183,7 +183,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Items will appear one at a time.<br/><br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
-				'<p align="center">Press the <b>Space Bar</b> when you are ready to start.</font></p></div>', 
+				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
 			instTemplateCategoryLeft : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
@@ -195,7 +195,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Items will appear one at a time.<br/><br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
-				'<p align="center">Press the <b>Space Bar</b> when you are ready to start.</font></p></div>', 
+				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
 			
 			//The default feedback messages for each cutoff. 
 			//If you put attribute1, attribute2 and category here, 
@@ -382,8 +382,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				{handle:'skip1',on:'keypressed', key:27}, //Esc + Enter will skip blocks
 				{handle:'left',on:'keypressed',key:'e'},
 				{handle:'right',on:'keypressed',key:'i'},
-				{handle:'left',on:'click',stimHandle:'myStimulusLeft'},
-				{handle:'right',on:'click',stimHandle:'myStimulusRight'}
+				{handle:'left',on:'rightTouch'},
+				{handle:'right',on:'leftTouch'}
 			],
 			// user interactions
 			interactions: [
