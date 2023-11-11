@@ -161,7 +161,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// The following variables in the instructions text will be replaced: 
 			// blockNum, nBlocks, attribute1, attribute2, and thecategory.
 			// Notice that this is HTML text.
-			instTemplatePractice : '<div data-handle="myStimulusSpace"><p align="center" style="font-size:20px; font-family:arial">' +
+			instTemplatePractice : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks</u><br/><br/></p>' + 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Put a left finger on the <b>E</b> key for items that belong to the category ' + 
@@ -172,7 +172,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
 				'<p align="center">Press the <b>Space Bar</b> when you are ready to start.</font></p></div>', 
-			instTemplateCategoryRight : '<div data-handle="myStimulusSpace"><p align="center" style="font-size:20px; font-family:arial">' +
+			instTemplateCategoryRight : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Put a left finger on the <b>E</b> key for items that belong to the category ' + 
@@ -184,7 +184,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
 				'<p align="center">Press the <b>Space Bar</b> when you are ready to start.</font></p></div>', 
-			instTemplateCategoryLeft : '<div data-handle="myStimulusSpace"><p align="center" style="font-size:20px; font-family:arial">' +
+			instTemplateCategoryLeft : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Put a left finger on the <b>E</b> key for items that belong to the category ' + 
