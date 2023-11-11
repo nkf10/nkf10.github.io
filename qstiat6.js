@@ -342,8 +342,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		
 		// layout object for the trials where category on left
 		var leftLayout = [
-			{location:{left:6,top:1},media:{word:piCurrent.leftKeyText}, css:piCurrent.keysCss},
-			{location:{right:6,top:1},media:{word:piCurrent.rightKeyText}, css:piCurrent.keysCss},
+			{location:{left:6,top:1},data:{handle:'myStimulusLeft'},media:{word:piCurrent.leftKeyText}, css:piCurrent.keysCss},
+			{location:{right:6,top:1},data:{handle:'myStimulusRight'},media:{word:piCurrent.rightKeyText}, css:piCurrent.keysCss},
 			{location:{left:6,top:4},media:piCurrent.attribute1.title.media, css:piCurrent.attribute1.title.css},
 			{location:{right:6,top:4},media:piCurrent.attribute2.title.media, css:piCurrent.attribute2.title.css},
 			{location:{left:6,top:4+(piCurrent.attribute1.title.height|3)}, media:{word:piCurrent.orText}, css:piCurrent.orCss},
@@ -351,8 +351,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		];
 		// layout object for the trials where category on right
 		var rightLayout = [
-			{location:{left:6,top:1},media:{word:piCurrent.leftKeyText}, css:piCurrent.keysCss},
-			{location:{right:6,top:1},media:{word:piCurrent.rightKeyText}, css:piCurrent.keysCss},
+			{location:{left:6,top:1},data:{handle:'myStimulusLeft'},media:{word:piCurrent.leftKeyText}, css:piCurrent.keysCss},
+			{location:{right:6,top:1},data:{handle:'myStimulusRight'},media:{word:piCurrent.rightKeyText}, css:piCurrent.keysCss},
 			{location:{left:6,top:4},media:piCurrent.attribute1.title.media, css:piCurrent.attribute1.title.css},
 			{location:{right:6,top:4},media:piCurrent.attribute2.title.media, css:piCurrent.attribute2.title.css},
 			{location:{right:6,top:4+(piCurrent.attribute2.title.height|3)},media:{word:piCurrent.orText}, css:piCurrent.orCss},
@@ -360,8 +360,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		];
 		// layout object for practice blocks (no category)
 		var pracLayout = [
-			{location:{left:6,top:1},media:{word:piCurrent.leftKeyText}, css:piCurrent.keysCss},
-			{location:{right:6,top:1},media:{word:piCurrent.rightKeyText}, css:piCurrent.keysCss},
+			{location:{left:6,top:1},data:{handle:'myStimulusLeft'},media:{word:piCurrent.leftKeyText}, css:piCurrent.keysCss},
+			{location:{right:6,top:1},data:{handle:'myStimulusRight'},media:{word:piCurrent.rightKeyText}, css:piCurrent.keysCss},
 			{location:{left:6,top:4},media:piCurrent.attribute1.title.media, css:piCurrent.attribute1.title.css},
 			{location:{right:6,top:4},media:piCurrent.attribute2.title.media, css:piCurrent.attribute2.title.css}
 		];
@@ -382,11 +382,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				{handle:'skip1',on:'keypressed', key:27}, //Esc + Enter will skip blocks
 				{handle:'left',on:'keypressed',key:'e'},
 				{handle:'right',on:'keypressed',key:'i'},
-				{handle:'end',on:'click',stimHandle:'myStimulusLeft'},
-				{handle:'end',on:'click',stimHandle:'myStimulusRight'}
+				{handle:'left',on:'click',stimHandle:'myStimulusLeft'},
+				{handle:'right',on:'click',stimHandle:'myStimulusRight'}
 			],
-layout: [{data:{handle:'myStimulusLeft'},media :{word:'Click me Left'}, location:{bottom:30}},
-	{data:{handle:'myStimulusRight'},media :{word:'Click me Right'}, location:{bottom:15}}],
 			// user interactions
 			interactions: [
 				// begin trial : display stimulus immediately
