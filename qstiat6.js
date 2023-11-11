@@ -382,8 +382,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				{handle:'skip1',on:'keypressed', key:27}, //Esc + Enter will skip blocks
 				{handle:'left',on:'keypressed',key:'e'},
 				{handle:'right',on:'keypressed',key:'i'},
-				{handle:'left',on:'rightTouch'},
-				{handle:'right',on:'leftTouch'}
+				{handle:'left',on:'leftTouch'},
+				{handle:'right',on:'rightTouch'}
 			],
 			// user interactions
 			interactions: [
@@ -453,7 +453,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 				// create user interface (just click to move on...)
 				input: [
-					{handle:'space',on:'space'}
+					{handle:'space',on:'space'},
+					{handle:'space',on:'bottomTouch'}	
 				],
 
 				interactions: [
