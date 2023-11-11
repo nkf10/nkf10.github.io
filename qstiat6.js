@@ -153,7 +153,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 			'Press the other key to continue.<p/>',
 			
-			finalText: 'You have completed this task<br/><br/>Press SPACE to continue.', 
+			finalText: 'You have completed this task<br/><br/>Press  to continue.', 
 
 			//These are templates for the instructions in the task. 
 			//If you want more specific instructions for different blocks, 
@@ -453,7 +453,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 				// create user interface (just click to move on...)
 				input: [
-					{handle:'space',on:'space'}
+					{handle:'space',on:'space'},
+					{handle:'space',on:'click',stimHandle:'myStimulusSpace'}
 				],
 
 				interactions: [
@@ -466,7 +467,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					},
 					// space hit, end trial soon
 					{
-						conditions: [{type:'inputEquals',value:'space'}],
+						conditions: [{type:'inputEquals',value:''}],
 						actions: [
 							{type:'hideStim', handle:'All'},
 							{type:'log'},
@@ -700,6 +701,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					layout : blockLayout, 
 					stimuli : [
 						{ 
+							data : {handle:'myStimulusSpace', alias:'myStimulusSpace'},
 							inherit : 'instructions', 
 							media : {html : instHTML}
 						},
