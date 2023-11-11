@@ -171,7 +171,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Items will appear one at a time.<br/><br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
+				'<p align="center" id = "spacebar" name="spacebar">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
 			instTemplateCategoryRight : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
@@ -183,7 +183,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Items will appear one at a time.<br/><br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
+				'<p align="center" id = "spacebar" name="spacebar">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
 			instTemplateCategoryLeft : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
@@ -195,7 +195,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Items will appear one at a time.<br/><br/>' + 
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' + 
 				'Press the other key to continue.<br/><br/>' + 
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
+				'<p align="center" id = "spacebar" name="spacebar">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
 			
 			//The default feedback messages for each cutoff. 
 			//If you put attribute1, attribute2 and category here, 
@@ -701,7 +701,6 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					layout : blockLayout, 
 					stimuli : [
 						{ 
-							data : {handle:'myStimulusSpace', alias:'myStimulusSpace'},
 							inherit : 'instructions', 
 							media : {html : instHTML}
 						},
