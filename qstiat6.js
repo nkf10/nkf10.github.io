@@ -382,10 +382,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				{handle:'skip1',on:'keypressed', key:27}, //Esc + Enter will skip blocks
 				{handle:'left',on:'keypressed',key:'e'},
 				{handle:'right',on:'keypressed',key:'i'},
-				{handle:'left',on:'keypressed',key:'w'},
-				{handle:'right',on:'keypressed',key:'o'}
+				{handle:'end',on:'click',stimHandle:'myStimulusLeft'},
+				{handle:'end',on:'click',stimHandle:'myStimulusRight'}
 			],
-
+layout: [{data:{handle:'myStimulusLeft'},media :{word:'Click me Left'}, location:{bottom:30}},
+	{data:{handle:'myStimulusRight'},media :{word:'Click me Right'}, location:{bottom:15}}],
 			// user interactions
 			interactions: [
 				// begin trial : display stimulus immediately
