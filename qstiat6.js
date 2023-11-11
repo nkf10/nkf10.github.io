@@ -454,6 +454,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				// create user interface (just click to move on...)
 				input: [
 					{handle:'space',on:'space'},
+					{handle:'space',on:'keypressed',key:'q'},
 					{handle:'space',on:'click',stimHandle:'myStimulusSpace'},
 					{handle:'space',on:'click',stimHandle:'myStimulusLeft'},
 					{handle:'space',on:'click',stimHandle:'myStimulusRight'}
