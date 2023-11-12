@@ -8,7 +8,7 @@ define(['pipAPI', 'https://nkf10.github.io/qstiat6.js'], function(APIConstructor
 		    title : {
 		      media : {word : 'Intellectual Disability'}, //Name of the category presented in the task.
 		      css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
-		      height : 7 //Used to position the "Or" in the combined block.
+		      height : 6 //Used to position the "Or" in the combined block.
 		    }, 
 		    media : [ //Stimuli content as PIP's media objects
 			    {word: 'dependent'},
@@ -19,7 +19,7 @@ define(['pipAPI', 'https://nkf10.github.io/qstiat6.js'], function(APIConstructor
 		
 		    ],
 		    //Stimulus css (style)
-		    css : {color:'#31b404','font-size':'2em'}
+		    css : {color:'#31b404','font-size':'3em'}
 		  },	
 
   		attribute1 : 
@@ -28,7 +28,7 @@ define(['pipAPI', 'https://nkf10.github.io/qstiat6.js'], function(APIConstructor
 			title : {
 				media : {word : 'Negative'}, //Name of the category presented in the task.
 				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
-				height : 7 //Used to position the "Or" in the combined block.
+				height : 6 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
 				{word: 'sickness'},
@@ -39,7 +39,7 @@ define(['pipAPI', 'https://nkf10.github.io/qstiat6.js'], function(APIConstructor
 				
 			], 
 			//Can change color and size of the targets here.
-			css : {color:'#31b404','font-size':'2em'}
+			css : {color:'#31b404','font-size':'3em'}
 			},
 		attribute2 : 
 			{
@@ -47,7 +47,7 @@ define(['pipAPI', 'https://nkf10.github.io/qstiat6.js'], function(APIConstructor
 			title : {
 				media : {word : 'Positive'}, //Name of the category presented in the task.
 				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
-				height : 7 //Used to position the "Or" in the combined block.
+				height : 6 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
 				{word: 'happiness'},
@@ -58,7 +58,7 @@ define(['pipAPI', 'https://nkf10.github.io/qstiat6.js'], function(APIConstructor
 				
 			], 
 			//Can change color and size of the targets here.
-			css : {color:'#31b404','font-size':'2em'}
+			css : {color:'#31b404','font-size':'3em'}
 			},
 
   base_url : {//Where are your images at?
