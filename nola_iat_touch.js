@@ -7,7 +7,7 @@ define(['pipAPI', 'https://nkf10.github.io/qstiat6.js'], function(APIConstructor
 		    name : 'ID', //Will appear in the data.
 		    title : {
 		      media : {word : 'Intellectual Disability'}, //Name of the category presented in the task.
-		      css : {color:'#31b404','font-size':'1.5em'}, //Style of the category title.
+		      css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
 		      height : 7 //Used to position the "Or" in the combined block.
 		    }, 
 		    media : [ //Stimuli content as PIP's media objects
@@ -27,7 +27,7 @@ define(['pipAPI', 'https://nkf10.github.io/qstiat6.js'], function(APIConstructor
 			name : 'N', //Attribute label
 			title : {
 				media : {word : 'Negative'}, //Name of the category presented in the task.
-				css : {color:'#31b404','font-size':'1.5em'}, //Style of the category title.
+				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
@@ -46,7 +46,7 @@ define(['pipAPI', 'https://nkf10.github.io/qstiat6.js'], function(APIConstructor
 			name : 'P', //Attribute label
 			title : {
 				media : {word : 'Positive'}, //Name of the category presented in the task.
-				css : {color:'#31b404','font-size':'1.5em'}, //Style of the category title.
+				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
